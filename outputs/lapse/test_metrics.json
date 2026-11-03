@@ -1,0 +1,130 @@
+{
+  "provenance": {
+    "schema_version": "instamart-part-b-run-v3",
+    "run_id": "42bb2b0f60824bfabee2162377c76d95",
+    "input_provenance": {
+      "schema_version": "instamart-part-b-input-v1",
+      "feature_schema_version": "instamart-part-b-features-v2",
+      "input_root": "D:\\instamart-copilot\\outputs\\isolated_data_prep\\phase-2.5NF1\\clean",
+      "input_files": {
+        "agent_scenarios.csv": {
+          "resolved_path": "D:\\instamart-copilot\\outputs\\isolated_data_prep\\phase-2.5NF1\\clean\\agent_scenarios.csv",
+          "relative_path": "agent_scenarios.csv",
+          "size_bytes": 595,
+          "sha256": "623aaea1a0d744b4fa6e978a24b428e05b5c398e0e6f505fdd499042235bd1a3"
+        },
+        "customers.csv": {
+          "resolved_path": "D:\\instamart-copilot\\outputs\\isolated_data_prep\\phase-2.5NF1\\clean\\customers.csv",
+          "relative_path": "customers.csv",
+          "size_bytes": 48915,
+          "sha256": "4350db0fbf37823dd775cd0b2683ec0ed175746b4ffc50261605564ec6ea2f49"
+        },
+        "orders.csv": {
+          "resolved_path": "D:\\instamart-copilot\\outputs\\isolated_data_prep\\phase-2.5NF1\\clean\\orders.csv",
+          "relative_path": "orders.csv",
+          "size_bytes": 860303,
+          "sha256": "a6aafdb75eb43c0e392b3b3dbacededaa0633ca8245c7ff077e8012e3e5a9512"
+        },
+        "policy_eval.csv": {
+          "resolved_path": "D:\\instamart-copilot\\outputs\\isolated_data_prep\\phase-2.5NF1\\clean\\policy_eval.csv",
+          "relative_path": "policy_eval.csv",
+          "size_bytes": 1198,
+          "sha256": "d238548a527380a7bae422efa997e43b7b9b76fb6aeec7867e9087287589d825"
+        },
+        "products.csv": {
+          "resolved_path": "D:\\instamart-copilot\\outputs\\isolated_data_prep\\phase-2.5NF1\\clean\\products.csv",
+          "relative_path": "products.csv",
+          "size_bytes": 1403,
+          "sha256": "348177a4ea8a90752b8c0e1738550a6d202c7fe167f4754be129d6878ef0658a"
+        },
+        "tickets.csv": {
+          "resolved_path": "D:\\instamart-copilot\\outputs\\isolated_data_prep\\phase-2.5NF1\\clean\\tickets.csv",
+          "relative_path": "tickets.csv",
+          "size_bytes": 32857,
+          "sha256": "89e054c5187de098f8587206671b0a4742580620db8dcb897288cf48a0696808"
+        }
+      },
+      "segmentation_artifact": {
+        "resolved_path": "D:\\instamart-copilot\\outputs\\customer_segments.csv",
+        "relative_path": null,
+        "size_bytes": 51950,
+        "sha256": "8b66908b124acbb36ac4498d2336cee9d3a21fadc3179b3ea709cb6fea99dffa"
+      },
+      "split_configuration": {
+        "train_fraction": 0.6,
+        "validation_fraction": 0.2,
+        "test_fraction": 0.2,
+        "validation_fraction_of_development": 0.25,
+        "stratify_column": "lapsed",
+        "random_state": 42,
+        "cv_folds": 5,
+        "cv_shuffle": true,
+        "cv_random_state": 42,
+        "cv_scoring": "f1",
+        "selection_metric": "validation_f1_lapsed"
+      },
+      "fingerprint": "239299f80145801aa353d32fcc57c1b94f4c898a08d3723cf1c323e35ba11d8a"
+    },
+    "feature_dataset_fingerprint": "3018bdae6a3ccea7293c577238ba4feae984264423242cfbcb598dfca9dc8e69",
+    "segments_input_fingerprint": "adb068aae140a3ef66c587486619c807f6f016105038b7a611e870cb8d65153b",
+    "split_configuration": {
+      "train_fraction": 0.6,
+      "validation_fraction": 0.2,
+      "test_fraction": 0.2,
+      "validation_fraction_of_development": 0.25,
+      "stratify_column": "lapsed",
+      "random_state": 42,
+      "cv_folds": 5,
+      "cv_shuffle": true,
+      "cv_random_state": 42,
+      "cv_scoring": "f1",
+      "selection_metric": "validation_f1_lapsed"
+    }
+  },
+  "evaluation_split": "test",
+  "purpose": "one final evaluation of the validation-selected model",
+  "selected_model": "random_forest",
+  "metrics": {
+    "accuracy": 0.7198275862068966,
+    "precision_lapsed": 0.6304347826086957,
+    "recall_lapsed": 0.651685393258427,
+    "f1_lapsed": 0.6408839779005525,
+    "confusion_matrix": [
+      [
+        109,
+        34
+      ],
+      [
+        31,
+        58
+      ]
+    ],
+    "classification_report": {
+      "not_lapsed": {
+        "precision": 0.7785714285714286,
+        "recall": 0.7622377622377622,
+        "f1-score": 0.7703180212014135,
+        "support": 143.0
+      },
+      "lapsed": {
+        "precision": 0.6304347826086957,
+        "recall": 0.651685393258427,
+        "f1-score": 0.6408839779005525,
+        "support": 89.0
+      },
+      "accuracy": 0.7198275862068966,
+      "macro avg": {
+        "precision": 0.7045031055900621,
+        "recall": 0.7069615777480946,
+        "f1-score": 0.705600999550983,
+        "support": 232.0
+      },
+      "weighted avg": {
+        "precision": 0.7217431462840008,
+        "recall": 0.7198275862068966,
+        "f1-score": 0.7206644442454797,
+        "support": 232.0
+      }
+    }
+  }
+}

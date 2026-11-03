@@ -1,0 +1,35 @@
+doc_name,passage_id,text
+delivery_policy.txt,delivery_policy_001,Delivery Policy.
+delivery_policy.txt,delivery_policy_002,Standard delivery is promised within 30 minutes of order confirmation in all supported cities.
+delivery_policy.txt,delivery_policy_003,"The supported cities are Chennai, Mumbai, Bengaluru, Delhi, Hyderabad and Pune."
+delivery_policy.txt,delivery_policy_004,"A delivery fee of INR 25 is charged on orders below INR 199, and delivery is free on orders of INR 199 or more."
+delivery_policy.txt,delivery_policy_005,During heavy rain the promised time may extend to 60 minutes and the app shows a rain notice.
+delivery_policy.txt,delivery_policy_006,A rider will attempt to contact the customer twice before marking an order as undeliverable.
+delivery_policy.txt,delivery_policy_007,Electronics items are delivered only after the customer shares a one time password with the rider.
+escalation_policy.txt,escalation_policy_001,Escalation Policy.
+escalation_policy.txt,escalation_policy_002,A ticket about fraud or an unauthorized transaction is marked high priority and sent to the security team within 2 hours.
+escalation_policy.txt,escalation_policy_003,"Tickets from premium customers are answered within 1 hour, and all other tickets within 24 hours."
+escalation_policy.txt,escalation_policy_004,"If an automated assistant cannot resolve a ticket within 6 steps, it must hand the case to a human agent with a short summary."
+escalation_policy.txt,escalation_policy_005,A human agent must call the customer back if such a high-value request is rejected.
+payment_policy.txt,payment_policy_001,Payment Policy.
+payment_policy.txt,payment_policy_002,"Customers can pay using UPI, debit card, credit card or cash on delivery."
+payment_policy.txt,payment_policy_003,Cash on delivery is available only for orders up to INR 2500.
+payment_policy.txt,payment_policy_004,"If a payment fails but money is deducted, the amount is returned automatically within 48 hours."
+payment_policy.txt,payment_policy_005,A customer who sees two charges for one order should raise a billing ticket with the order identifier.
+payment_policy.txt,payment_policy_006,Wallet balance can be used for any order and is never refunded as cash.
+payment_policy.txt,payment_policy_007,Coupons cannot be combined with wallet balance on the same order.
+privacy_policy.txt,privacy_policy_001,Privacy Policy.
+privacy_policy.txt,privacy_policy_002,Customer phone numbers and email addresses are used only for order updates and support.
+privacy_policy.txt,privacy_policy_003,Support tickets are processed with personal details masked before any automated tool reads them.
+privacy_policy.txt,privacy_policy_004,Delivery addresses are deleted from active systems 180 days after the last order.
+privacy_policy.txt,privacy_policy_005,A customer can ask for account deletion and the request is completed within 30 days.
+privacy_policy.txt,privacy_policy_006,Payment card numbers are never stored by the support system.
+refund_policy.txt,refund_policy_001,Refund Policy.
+refund_policy.txt,refund_policy_002,A refund can be requested only for orders whose status is completed.
+refund_policy.txt,refund_policy_003,"Orders with status cancelled were never charged, so no refund applies to them."
+refund_policy.txt,refund_policy_004,"If a completed order is delivered in more than 45 minutes, the customer receives a full refund of the order amount."
+refund_policy.txt,refund_policy_005,"If a completed order is delivered in 45 minutes or less, no late-delivery refund is paid."
+refund_policy.txt,refund_policy_006,Refunds up to INR 1000 are approved automatically by the support system.
+refund_policy.txt,refund_policy_007,A refund above INR 1000 must be approved by a human support lead before money is returned.
+refund_policy.txt,refund_policy_008,Approved refunds are credited to the original payment method within 5 working days.
+refund_policy.txt,refund_policy_009,A refund request must be raised within 7 days of the delivery date.

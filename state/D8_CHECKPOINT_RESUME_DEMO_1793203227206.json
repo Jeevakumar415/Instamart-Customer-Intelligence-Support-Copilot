@@ -1,0 +1,49 @@
+{
+  "run_id": "D8_CHECKPOINT_RESUME_DEMO_1793203227206",
+  "status": "COMPLETED",
+  "scenario_id": "D8_CHECKPOINT_RESUME_DEMO_1793203227206",
+  "customer_id": "D8_TEST",
+  "order_id": "ORD-100048",
+  "message": "My order ORD-100048 reached me very late. I would like a refund.",
+  "expected_outcome": "REFUND",
+  "expected_refund_inr": 128.25,
+  "messages": [
+    {
+      "role": "system",
+      "content": "AGENT\nUse tools to look up orders, search policies, calculate refunds, issue eligible simulated refunds, or escalate to a human. Never claim real money was transferred."
+    },
+    {
+      "role": "user",
+      "content": "SCENARIO_ID: D8_CHECKPOINT_RESUME_DEMO_1793203227206\nCUSTOMER_ID: D8_TEST\nMESSAGE: My order ORD-100048 reached me very late. I would like a refund."
+    }
+  ],
+  "trace": [],
+  "tool_steps": 0,
+  "model_calls": 1,
+  "estimated_tokens": 0,
+  "iterations": 1,
+  "current_order_id": null,
+  "final_result": {
+    "timestamp": "2026-10-28T16:00:27.226874+00:00",
+    "run_id": "D8_CHECKPOINT_RESUME_DEMO_1793203227206",
+    "scenario_id": "D8_CHECKPOINT_RESUME_DEMO_1793203227206",
+    "customer_id": "D8_TEST",
+    "order_id": "ORD-100048",
+    "message": "My order ORD-100048 reached me very late. I would like a refund.",
+    "expected_outcome": "REFUND",
+    "actual_outcome": "FALLBACK",
+    "expected_refund_inr": 128.25,
+    "final_response": "FALLBACK: The model returned an unsupported response.",
+    "tool_steps": 0,
+    "trace": [],
+    "error": "",
+    "stop_reason": "COMPLETED",
+    "model_calls": 1,
+    "estimated_tokens": 97,
+    "elapsed_seconds": 0.0,
+    "real_money_moved": false
+  },
+  "final_response": "FALLBACK: The model returned an unsupported response.",
+  "actual_outcome": "FALLBACK",
+  "updated_at": "2026-10-28T16:00:27.226874+00:00"
+}

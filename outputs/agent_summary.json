@@ -1,0 +1,64 @@
+{
+  "component": "Part D2 - Safe Refund Agent",
+  "scenario_count": 7,
+  "expected_outcome_accuracy": 1.0,
+  "outcome_counts": {
+    "REFUND": 2,
+    "DENIED": 2,
+    "ESCALATE": 1,
+    "NOT_FOUND": 1,
+    "FALLBACK": 1
+  },
+  "tool_step_limit": 8,
+  "refund_approval_limit_inr": 1000.0,
+  "simulated_refund_ledger_entries": 2,
+  "run_log_entries": 35,
+  "recovery_tests": {
+    "recovery_test_count": 5,
+    "passed_count": 5,
+    "failed_count": 0,
+    "tests": [
+      {
+        "test": "malformed_arguments_rejected",
+        "passed": true,
+        "details": {
+          "error": "invalid_tool_arguments_json"
+        }
+      },
+      {
+        "test": "unknown_tool_rejected",
+        "passed": true,
+        "details": {
+          "error": "unsupported_tool",
+          "tool_name": "delete_customer"
+        }
+      },
+      {
+        "test": "nonexistent_order_refund_rejected",
+        "passed": true,
+        "details": {
+          "status": "DENIED",
+          "reason": "order_not_found"
+        }
+      },
+      {
+        "test": "high_value_refund_cannot_be_issued_automatically",
+        "passed": true,
+        "details": {
+          "status": "ESCALATE",
+          "reason": "human_approval_required_above_INR_1000"
+        }
+      },
+      {
+        "test": "agent_loop_is_bounded",
+        "passed": true,
+        "details": {
+          "outcome": "FALLBACK",
+          "tool_steps": 4,
+          "error": "token_limit_reached"
+        }
+      }
+    ]
+  },
+  "real_money_moved": false
+}

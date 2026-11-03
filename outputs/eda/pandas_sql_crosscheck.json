@@ -1,0 +1,13 @@
+{
+  "pandas_completed_revenue": 2998668.8,
+  "sqlite_completed_revenue": 2998668.8,
+  "difference": 0.0,
+  "match": true,
+  "sqlite_summary": [
+    {
+      "completed_order_count": 11110,
+      "completed_revenue": 2998668.8,
+      "average_order_amount": 269.9071827182718
+    }
+  ]
+}

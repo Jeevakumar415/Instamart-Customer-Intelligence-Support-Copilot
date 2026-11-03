@@ -1,0 +1,62 @@
+{
+  "customers": {
+    "rows": 1200,
+    "columns": 5,
+    "column_names": [
+      "customer_id",
+      "city",
+      "signup_date",
+      "age",
+      "gender"
+    ],
+    "data_types": {
+      "customer_id": "object",
+      "city": "object",
+      "signup_date": "object",
+      "age": "int64",
+      "gender": "object"
+    }
+  },
+  "products": {
+    "rows": 40,
+    "columns": 4,
+    "column_names": [
+      "product_id",
+      "product_name",
+      "category",
+      "price_inr"
+    ],
+    "data_types": {
+      "product_id": "object",
+      "product_name": "object",
+      "category": "object",
+      "price_inr": "int64"
+    }
+  },
+  "orders": {
+    "rows": 12309,
+    "columns": 9,
+    "column_names": [
+      "order_id",
+      "customer_id",
+      "product_id",
+      "quantity",
+      "order_ts",
+      "status",
+      "discount_pct",
+      "order_amount",
+      "delivery_minutes"
+    ],
+    "data_types": {
+      "order_id": "object",
+      "customer_id": "object",
+      "product_id": "object",
+      "quantity": "int64",
+      "order_ts": "datetime64[ns]",
+      "status": "string",
+      "discount_pct": "int64",
+      "order_amount": "float64",
+      "delivery_minutes": "float64"
+    }
+  }
+}

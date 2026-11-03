@@ -1,0 +1,27 @@
+{
+  "component": "Part D8 - Checkpoint and resume",
+  "run_id": "D8_CHECKPOINT_RESUME_DEMO_1793204097914",
+  "passed": 7,
+  "failed": 0,
+  "checks": {
+    "interrupted_after_four_tools": true,
+    "checkpoint_preserved": true,
+    "no_duplicate_tool_steps": true,
+    "exactly_four_tools": true,
+    "run_completed": true,
+    "refund_outcome": true,
+    "simulation_only": true
+  },
+  "tools_before_resume": [
+    "get_order",
+    "search_policy",
+    "calculate_refund",
+    "issue_refund"
+  ],
+  "tools_after_resume": [
+    "get_order",
+    "search_policy",
+    "calculate_refund",
+    "issue_refund"
+  ]
+}

@@ -1,0 +1,31 @@
+city,category,revenue_inr
+Bengaluru,Dairy,87075.05
+Bengaluru,Electronics,233909.45
+Bengaluru,Grocery,110915.65
+Bengaluru,Personal Care,20193.85
+Bengaluru,Snacks,71549.4
+Chennai,Dairy,78301.8
+Chennai,Electronics,195508.8
+Chennai,Grocery,93817.45
+Chennai,Personal Care,27675.4
+Chennai,Snacks,68325.7
+Delhi,Dairy,117271.7
+Delhi,Electronics,158549.1
+Delhi,Grocery,112658.05
+Delhi,Personal Care,23471.5
+Delhi,Snacks,90879.45
+Hyderabad,Dairy,83731.0
+Hyderabad,Electronics,228913.1
+Hyderabad,Grocery,109475.4
+Hyderabad,Personal Care,24800.05
+Hyderabad,Snacks,81670.35
+Mumbai,Dairy,75209.85
+Mumbai,Electronics,214738.4
+Mumbai,Grocery,78970.15
+Mumbai,Personal Care,38018.0
+Mumbai,Snacks,72122.1
+Pune,Dairy,90349.55
+Pune,Electronics,187629.25
+Pune,Grocery,108456.6
+Pune,Personal Care,34275.15
+Pune,Snacks,80207.5

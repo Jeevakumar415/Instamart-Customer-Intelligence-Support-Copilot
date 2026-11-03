@@ -1,0 +1,262 @@
+{
+  "run_id": "D8_CHECKPOINT_RESUME_DEMO",
+  "status": "COMPLETED",
+  "scenario_id": "D8_S1_RESUME",
+  "customer_id": "D8_TEST",
+  "order_id": "ORD-100048",
+  "message": "My order ORD-100048 reached me very late. I would like a refund.",
+  "expected_outcome": "REFUND",
+  "expected_refund_inr": 128.25,
+  "messages": [
+    {
+      "role": "system",
+      "content": "AGENT\nUse tools to look up orders, search policies, calculate refunds, issue eligible simulated refunds, or escalate to a human. Never claim real money was transferred."
+    },
+    {
+      "role": "user",
+      "content": "SCENARIO_ID: D8_S1_RESUME\nCUSTOMER_ID: D8_TEST\nMESSAGE: My order ORD-100048 reached me very late. I would like a refund."
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_1",
+          "name": "get_order",
+          "arguments": {
+            "order_id": "ORD-100048"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "get_order",
+      "content": "{\"order_id\": \"ORD-100048\", \"status\": \"completed\", \"order_amount\": 128.25, \"delivery_minutes\": 65.0}"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_2",
+          "name": "search_policy",
+          "arguments": {
+            "query": "refund policy late delivery"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "search_policy",
+      "content": "{\"query\": \"refund policy late delivery\", \"found\": true, \"passages\": [{\"doc_name\": \"refund_policy.txt\", \"passage_id\": \"refund_policy_001\", \"score\": 0.669062, \"text\": \"Refund Policy.\"}, {\"doc_name\": \"refund_policy.txt\", \"passage_id\": \"refund_policy_005\", \"score\": 0.372997, \"text\": \"If a completed order is delivered in 45 minutes or less, no late-delivery refund is paid.\"}, {\"doc_name\": \"delivery_policy.txt\", \"passage_id\": \"delivery_policy_001\", \"score\": 0.310951, \"text\": \"Delivery Policy.\"}]}"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_3",
+          "name": "calculate_refund",
+          "arguments": {
+            "order_amount": 128.25,
+            "delivery_minutes": 65.0
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "calculate_refund",
+      "content": "{\"refund_inr\": 128.25, \"eligible\": true, \"reason\": \"completed_order_delivered_after_45_minutes\", \"requires_human_approval\": false}"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_4",
+          "name": "issue_refund",
+          "arguments": {
+            "order_id": "ORD-100048",
+            "refund_inr": 128.25
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "issue_refund",
+      "content": "{\"status\": \"DENIED\", \"reason\": \"duplicate_refund_prevented\"}"
+    }
+  ],
+  "trace": [
+    {
+      "step": 1,
+      "tool": "get_order",
+      "arguments": {
+        "order_id": "ORD-100048"
+      },
+      "result": {
+        "order_id": "ORD-100048",
+        "status": "completed",
+        "order_amount": 128.25,
+        "delivery_minutes": 65.0
+      }
+    },
+    {
+      "step": 2,
+      "tool": "search_policy",
+      "arguments": {
+        "query": "refund policy late delivery"
+      },
+      "result": {
+        "query": "refund policy late delivery",
+        "found": true,
+        "passages": [
+          {
+            "doc_name": "refund_policy.txt",
+            "passage_id": "refund_policy_001",
+            "score": 0.669062,
+            "text": "Refund Policy."
+          },
+          {
+            "doc_name": "refund_policy.txt",
+            "passage_id": "refund_policy_005",
+            "score": 0.372997,
+            "text": "If a completed order is delivered in 45 minutes or less, no late-delivery refund is paid."
+          },
+          {
+            "doc_name": "delivery_policy.txt",
+            "passage_id": "delivery_policy_001",
+            "score": 0.310951,
+            "text": "Delivery Policy."
+          }
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "tool": "calculate_refund",
+      "arguments": {
+        "order_amount": 128.25,
+        "delivery_minutes": 65.0
+      },
+      "result": {
+        "refund_inr": 128.25,
+        "eligible": true,
+        "reason": "completed_order_delivered_after_45_minutes",
+        "requires_human_approval": false
+      }
+    },
+    {
+      "step": 4,
+      "tool": "issue_refund",
+      "arguments": {
+        "order_id": "ORD-100048",
+        "refund_inr": 128.25
+      },
+      "result": {
+        "status": "DENIED",
+        "reason": "duplicate_refund_prevented"
+      }
+    }
+  ],
+  "tool_steps": 4,
+  "model_calls": 4,
+  "estimated_tokens": 1054,
+  "iterations": 4,
+  "current_order_id": "ORD-100048",
+  "final_result": {
+    "timestamp": "2026-10-27T07:27:02.316467+00:00",
+    "run_id": "D8_CHECKPOINT_RESUME_DEMO",
+    "scenario_id": "D8_S1_RESUME",
+    "customer_id": "D8_TEST",
+    "order_id": "ORD-100048",
+    "message": "My order ORD-100048 reached me very late. I would like a refund.",
+    "expected_outcome": "REFUND",
+    "actual_outcome": "DENIED",
+    "expected_refund_inr": 128.25,
+    "final_response": "DENIED: duplicate_refund_prevented.",
+    "tool_steps": 4,
+    "trace": [
+      {
+        "step": 1,
+        "tool": "get_order",
+        "arguments": {
+          "order_id": "ORD-100048"
+        },
+        "result": {
+          "order_id": "ORD-100048",
+          "status": "completed",
+          "order_amount": 128.25,
+          "delivery_minutes": 65.0
+        }
+      },
+      {
+        "step": 2,
+        "tool": "search_policy",
+        "arguments": {
+          "query": "refund policy late delivery"
+        },
+        "result": {
+          "query": "refund policy late delivery",
+          "found": true,
+          "passages": [
+            {
+              "doc_name": "refund_policy.txt",
+              "passage_id": "refund_policy_001",
+              "score": 0.669062,
+              "text": "Refund Policy."
+            },
+            {
+              "doc_name": "refund_policy.txt",
+              "passage_id": "refund_policy_005",
+              "score": 0.372997,
+              "text": "If a completed order is delivered in 45 minutes or less, no late-delivery refund is paid."
+            },
+            {
+              "doc_name": "delivery_policy.txt",
+              "passage_id": "delivery_policy_001",
+              "score": 0.310951,
+              "text": "Delivery Policy."
+            }
+          ]
+        }
+      },
+      {
+        "step": 3,
+        "tool": "calculate_refund",
+        "arguments": {
+          "order_amount": 128.25,
+          "delivery_minutes": 65.0
+        },
+        "result": {
+          "refund_inr": 128.25,
+          "eligible": true,
+          "reason": "completed_order_delivered_after_45_minutes",
+          "requires_human_approval": false
+        }
+      },
+      {
+        "step": 4,
+        "tool": "issue_refund",
+        "arguments": {
+          "order_id": "ORD-100048",
+          "refund_inr": 128.25
+        },
+        "result": {
+          "status": "DENIED",
+          "reason": "duplicate_refund_prevented"
+        }
+      }
+    ],
+    "error": "",
+    "stop_reason": "COMPLETED_FROM_CHECKPOINT",
+    "model_calls": 4,
+    "estimated_tokens": 1054,
+    "elapsed_seconds": 0.0,
+    "real_money_moved": false
+  }
+}

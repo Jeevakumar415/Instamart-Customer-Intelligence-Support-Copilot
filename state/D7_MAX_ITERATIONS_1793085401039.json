@@ -1,0 +1,688 @@
+{
+  "run_id": "D7_MAX_ITERATIONS_1793085401039",
+  "status": "COMPLETED",
+  "scenario_id": "D7_MAX_ITERATIONS_TEST",
+  "customer_id": "D7_TEST",
+  "order_id": "ORD-100048",
+  "message": "[LOOP] Refund order ORD-100048.",
+  "expected_outcome": "FALLBACK",
+  "expected_refund_inr": 0,
+  "messages": [
+    {
+      "role": "system",
+      "content": "AGENT\nUse tools to look up orders, search policies, calculate refunds, issue eligible simulated refunds, or escalate to a human. Never claim real money was transferred."
+    },
+    {
+      "role": "user",
+      "content": "SCENARIO_ID: D7_MAX_ITERATIONS_TEST\nCUSTOMER_ID: D7_TEST\nMESSAGE: [LOOP] Refund order ORD-100048."
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_1",
+          "name": "search_policy",
+          "arguments": {
+            "query": "refund policy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "search_policy",
+      "content": "{\"query\": \"refund policy\", \"found\": true, \"passages\": [{\"doc_name\": \"refund_policy.txt\", \"passage_id\": \"refund_policy_001\", \"score\": 1.0, \"text\": \"Refund Policy.\"}, {\"doc_name\": \"delivery_policy.txt\", \"passage_id\": \"delivery_policy_001\", \"score\": 0.268942, \"text\": \"Delivery Policy.\"}, {\"doc_name\": \"payment_policy.txt\", \"passage_id\": \"payment_policy_001\", \"score\": 0.255166, \"text\": \"Payment Policy.\"}]}"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_2",
+          "name": "search_policy",
+          "arguments": {
+            "query": "refund policy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "search_policy",
+      "content": "{\"query\": \"refund policy\", \"found\": true, \"passages\": [{\"doc_name\": \"refund_policy.txt\", \"passage_id\": \"refund_policy_001\", \"score\": 1.0, \"text\": \"Refund Policy.\"}, {\"doc_name\": \"delivery_policy.txt\", \"passage_id\": \"delivery_policy_001\", \"score\": 0.268942, \"text\": \"Delivery Policy.\"}, {\"doc_name\": \"payment_policy.txt\", \"passage_id\": \"payment_policy_001\", \"score\": 0.255166, \"text\": \"Payment Policy.\"}]}"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_3",
+          "name": "search_policy",
+          "arguments": {
+            "query": "refund policy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "search_policy",
+      "content": "{\"query\": \"refund policy\", \"found\": true, \"passages\": [{\"doc_name\": \"refund_policy.txt\", \"passage_id\": \"refund_policy_001\", \"score\": 1.0, \"text\": \"Refund Policy.\"}, {\"doc_name\": \"delivery_policy.txt\", \"passage_id\": \"delivery_policy_001\", \"score\": 0.268942, \"text\": \"Delivery Policy.\"}, {\"doc_name\": \"payment_policy.txt\", \"passage_id\": \"payment_policy_001\", \"score\": 0.255166, \"text\": \"Payment Policy.\"}]}"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_4",
+          "name": "search_policy",
+          "arguments": {
+            "query": "refund policy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "search_policy",
+      "content": "{\"query\": \"refund policy\", \"found\": true, \"passages\": [{\"doc_name\": \"refund_policy.txt\", \"passage_id\": \"refund_policy_001\", \"score\": 1.0, \"text\": \"Refund Policy.\"}, {\"doc_name\": \"delivery_policy.txt\", \"passage_id\": \"delivery_policy_001\", \"score\": 0.268942, \"text\": \"Delivery Policy.\"}, {\"doc_name\": \"payment_policy.txt\", \"passage_id\": \"payment_policy_001\", \"score\": 0.255166, \"text\": \"Payment Policy.\"}]}"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_5",
+          "name": "search_policy",
+          "arguments": {
+            "query": "refund policy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "search_policy",
+      "content": "{\"query\": \"refund policy\", \"found\": true, \"passages\": [{\"doc_name\": \"refund_policy.txt\", \"passage_id\": \"refund_policy_001\", \"score\": 1.0, \"text\": \"Refund Policy.\"}, {\"doc_name\": \"delivery_policy.txt\", \"passage_id\": \"delivery_policy_001\", \"score\": 0.268942, \"text\": \"Delivery Policy.\"}, {\"doc_name\": \"payment_policy.txt\", \"passage_id\": \"payment_policy_001\", \"score\": 0.255166, \"text\": \"Payment Policy.\"}]}"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_6",
+          "name": "search_policy",
+          "arguments": {
+            "query": "refund policy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "search_policy",
+      "content": "{\"query\": \"refund policy\", \"found\": true, \"passages\": [{\"doc_name\": \"refund_policy.txt\", \"passage_id\": \"refund_policy_001\", \"score\": 1.0, \"text\": \"Refund Policy.\"}, {\"doc_name\": \"delivery_policy.txt\", \"passage_id\": \"delivery_policy_001\", \"score\": 0.268942, \"text\": \"Delivery Policy.\"}, {\"doc_name\": \"payment_policy.txt\", \"passage_id\": \"payment_policy_001\", \"score\": 0.255166, \"text\": \"Payment Policy.\"}]}"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_7",
+          "name": "search_policy",
+          "arguments": {
+            "query": "refund policy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "search_policy",
+      "content": "{\"query\": \"refund policy\", \"found\": true, \"passages\": [{\"doc_name\": \"refund_policy.txt\", \"passage_id\": \"refund_policy_001\", \"score\": 1.0, \"text\": \"Refund Policy.\"}, {\"doc_name\": \"delivery_policy.txt\", \"passage_id\": \"delivery_policy_001\", \"score\": 0.268942, \"text\": \"Delivery Policy.\"}, {\"doc_name\": \"payment_policy.txt\", \"passage_id\": \"payment_policy_001\", \"score\": 0.255166, \"text\": \"Payment Policy.\"}]}"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_8",
+          "name": "search_policy",
+          "arguments": {
+            "query": "refund policy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "search_policy",
+      "content": "{\"query\": \"refund policy\", \"found\": true, \"passages\": [{\"doc_name\": \"refund_policy.txt\", \"passage_id\": \"refund_policy_001\", \"score\": 1.0, \"text\": \"Refund Policy.\"}, {\"doc_name\": \"delivery_policy.txt\", \"passage_id\": \"delivery_policy_001\", \"score\": 0.268942, \"text\": \"Delivery Policy.\"}, {\"doc_name\": \"payment_policy.txt\", \"passage_id\": \"payment_policy_001\", \"score\": 0.255166, \"text\": \"Payment Policy.\"}]}"
+    }
+  ],
+  "trace": [
+    {
+      "step": 1,
+      "tool": "search_policy",
+      "arguments": {
+        "query": "refund policy"
+      },
+      "result": {
+        "query": "refund policy",
+        "found": true,
+        "passages": [
+          {
+            "doc_name": "refund_policy.txt",
+            "passage_id": "refund_policy_001",
+            "score": 1.0,
+            "text": "Refund Policy."
+          },
+          {
+            "doc_name": "delivery_policy.txt",
+            "passage_id": "delivery_policy_001",
+            "score": 0.268942,
+            "text": "Delivery Policy."
+          },
+          {
+            "doc_name": "payment_policy.txt",
+            "passage_id": "payment_policy_001",
+            "score": 0.255166,
+            "text": "Payment Policy."
+          }
+        ]
+      }
+    },
+    {
+      "step": 2,
+      "tool": "search_policy",
+      "arguments": {
+        "query": "refund policy"
+      },
+      "result": {
+        "query": "refund policy",
+        "found": true,
+        "passages": [
+          {
+            "doc_name": "refund_policy.txt",
+            "passage_id": "refund_policy_001",
+            "score": 1.0,
+            "text": "Refund Policy."
+          },
+          {
+            "doc_name": "delivery_policy.txt",
+            "passage_id": "delivery_policy_001",
+            "score": 0.268942,
+            "text": "Delivery Policy."
+          },
+          {
+            "doc_name": "payment_policy.txt",
+            "passage_id": "payment_policy_001",
+            "score": 0.255166,
+            "text": "Payment Policy."
+          }
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "tool": "search_policy",
+      "arguments": {
+        "query": "refund policy"
+      },
+      "result": {
+        "query": "refund policy",
+        "found": true,
+        "passages": [
+          {
+            "doc_name": "refund_policy.txt",
+            "passage_id": "refund_policy_001",
+            "score": 1.0,
+            "text": "Refund Policy."
+          },
+          {
+            "doc_name": "delivery_policy.txt",
+            "passage_id": "delivery_policy_001",
+            "score": 0.268942,
+            "text": "Delivery Policy."
+          },
+          {
+            "doc_name": "payment_policy.txt",
+            "passage_id": "payment_policy_001",
+            "score": 0.255166,
+            "text": "Payment Policy."
+          }
+        ]
+      }
+    },
+    {
+      "step": 4,
+      "tool": "search_policy",
+      "arguments": {
+        "query": "refund policy"
+      },
+      "result": {
+        "query": "refund policy",
+        "found": true,
+        "passages": [
+          {
+            "doc_name": "refund_policy.txt",
+            "passage_id": "refund_policy_001",
+            "score": 1.0,
+            "text": "Refund Policy."
+          },
+          {
+            "doc_name": "delivery_policy.txt",
+            "passage_id": "delivery_policy_001",
+            "score": 0.268942,
+            "text": "Delivery Policy."
+          },
+          {
+            "doc_name": "payment_policy.txt",
+            "passage_id": "payment_policy_001",
+            "score": 0.255166,
+            "text": "Payment Policy."
+          }
+        ]
+      }
+    },
+    {
+      "step": 5,
+      "tool": "search_policy",
+      "arguments": {
+        "query": "refund policy"
+      },
+      "result": {
+        "query": "refund policy",
+        "found": true,
+        "passages": [
+          {
+            "doc_name": "refund_policy.txt",
+            "passage_id": "refund_policy_001",
+            "score": 1.0,
+            "text": "Refund Policy."
+          },
+          {
+            "doc_name": "delivery_policy.txt",
+            "passage_id": "delivery_policy_001",
+            "score": 0.268942,
+            "text": "Delivery Policy."
+          },
+          {
+            "doc_name": "payment_policy.txt",
+            "passage_id": "payment_policy_001",
+            "score": 0.255166,
+            "text": "Payment Policy."
+          }
+        ]
+      }
+    },
+    {
+      "step": 6,
+      "tool": "search_policy",
+      "arguments": {
+        "query": "refund policy"
+      },
+      "result": {
+        "query": "refund policy",
+        "found": true,
+        "passages": [
+          {
+            "doc_name": "refund_policy.txt",
+            "passage_id": "refund_policy_001",
+            "score": 1.0,
+            "text": "Refund Policy."
+          },
+          {
+            "doc_name": "delivery_policy.txt",
+            "passage_id": "delivery_policy_001",
+            "score": 0.268942,
+            "text": "Delivery Policy."
+          },
+          {
+            "doc_name": "payment_policy.txt",
+            "passage_id": "payment_policy_001",
+            "score": 0.255166,
+            "text": "Payment Policy."
+          }
+        ]
+      }
+    },
+    {
+      "step": 7,
+      "tool": "search_policy",
+      "arguments": {
+        "query": "refund policy"
+      },
+      "result": {
+        "query": "refund policy",
+        "found": true,
+        "passages": [
+          {
+            "doc_name": "refund_policy.txt",
+            "passage_id": "refund_policy_001",
+            "score": 1.0,
+            "text": "Refund Policy."
+          },
+          {
+            "doc_name": "delivery_policy.txt",
+            "passage_id": "delivery_policy_001",
+            "score": 0.268942,
+            "text": "Delivery Policy."
+          },
+          {
+            "doc_name": "payment_policy.txt",
+            "passage_id": "payment_policy_001",
+            "score": 0.255166,
+            "text": "Payment Policy."
+          }
+        ]
+      }
+    },
+    {
+      "step": 8,
+      "tool": "search_policy",
+      "arguments": {
+        "query": "refund policy"
+      },
+      "result": {
+        "query": "refund policy",
+        "found": true,
+        "passages": [
+          {
+            "doc_name": "refund_policy.txt",
+            "passage_id": "refund_policy_001",
+            "score": 1.0,
+            "text": "Refund Policy."
+          },
+          {
+            "doc_name": "delivery_policy.txt",
+            "passage_id": "delivery_policy_001",
+            "score": 0.268942,
+            "text": "Delivery Policy."
+          },
+          {
+            "doc_name": "payment_policy.txt",
+            "passage_id": "payment_policy_001",
+            "score": 0.255166,
+            "text": "Payment Policy."
+          }
+        ]
+      }
+    }
+  ],
+  "tool_steps": 8,
+  "model_calls": 8,
+  "estimated_tokens": 5224,
+  "iterations": 8,
+  "current_order_id": null,
+  "final_result": {
+    "timestamp": "2026-10-27T07:16:41.128226+00:00",
+    "run_id": "D7_MAX_ITERATIONS_1793085401039",
+    "scenario_id": "D7_MAX_ITERATIONS_TEST",
+    "customer_id": "D7_TEST",
+    "order_id": "ORD-100048",
+    "message": "[LOOP] Refund order ORD-100048.",
+    "expected_outcome": "FALLBACK",
+    "actual_outcome": "FALLBACK",
+    "expected_refund_inr": 0,
+    "final_response": "FALLBACK_MAX_ITERATIONS: maximum iterations reached; human review required.",
+    "tool_steps": 8,
+    "trace": [
+      {
+        "step": 1,
+        "tool": "search_policy",
+        "arguments": {
+          "query": "refund policy"
+        },
+        "result": {
+          "query": "refund policy",
+          "found": true,
+          "passages": [
+            {
+              "doc_name": "refund_policy.txt",
+              "passage_id": "refund_policy_001",
+              "score": 1.0,
+              "text": "Refund Policy."
+            },
+            {
+              "doc_name": "delivery_policy.txt",
+              "passage_id": "delivery_policy_001",
+              "score": 0.268942,
+              "text": "Delivery Policy."
+            },
+            {
+              "doc_name": "payment_policy.txt",
+              "passage_id": "payment_policy_001",
+              "score": 0.255166,
+              "text": "Payment Policy."
+            }
+          ]
+        }
+      },
+      {
+        "step": 2,
+        "tool": "search_policy",
+        "arguments": {
+          "query": "refund policy"
+        },
+        "result": {
+          "query": "refund policy",
+          "found": true,
+          "passages": [
+            {
+              "doc_name": "refund_policy.txt",
+              "passage_id": "refund_policy_001",
+              "score": 1.0,
+              "text": "Refund Policy."
+            },
+            {
+              "doc_name": "delivery_policy.txt",
+              "passage_id": "delivery_policy_001",
+              "score": 0.268942,
+              "text": "Delivery Policy."
+            },
+            {
+              "doc_name": "payment_policy.txt",
+              "passage_id": "payment_policy_001",
+              "score": 0.255166,
+              "text": "Payment Policy."
+            }
+          ]
+        }
+      },
+      {
+        "step": 3,
+        "tool": "search_policy",
+        "arguments": {
+          "query": "refund policy"
+        },
+        "result": {
+          "query": "refund policy",
+          "found": true,
+          "passages": [
+            {
+              "doc_name": "refund_policy.txt",
+              "passage_id": "refund_policy_001",
+              "score": 1.0,
+              "text": "Refund Policy."
+            },
+            {
+              "doc_name": "delivery_policy.txt",
+              "passage_id": "delivery_policy_001",
+              "score": 0.268942,
+              "text": "Delivery Policy."
+            },
+            {
+              "doc_name": "payment_policy.txt",
+              "passage_id": "payment_policy_001",
+              "score": 0.255166,
+              "text": "Payment Policy."
+            }
+          ]
+        }
+      },
+      {
+        "step": 4,
+        "tool": "search_policy",
+        "arguments": {
+          "query": "refund policy"
+        },
+        "result": {
+          "query": "refund policy",
+          "found": true,
+          "passages": [
+            {
+              "doc_name": "refund_policy.txt",
+              "passage_id": "refund_policy_001",
+              "score": 1.0,
+              "text": "Refund Policy."
+            },
+            {
+              "doc_name": "delivery_policy.txt",
+              "passage_id": "delivery_policy_001",
+              "score": 0.268942,
+              "text": "Delivery Policy."
+            },
+            {
+              "doc_name": "payment_policy.txt",
+              "passage_id": "payment_policy_001",
+              "score": 0.255166,
+              "text": "Payment Policy."
+            }
+          ]
+        }
+      },
+      {
+        "step": 5,
+        "tool": "search_policy",
+        "arguments": {
+          "query": "refund policy"
+        },
+        "result": {
+          "query": "refund policy",
+          "found": true,
+          "passages": [
+            {
+              "doc_name": "refund_policy.txt",
+              "passage_id": "refund_policy_001",
+              "score": 1.0,
+              "text": "Refund Policy."
+            },
+            {
+              "doc_name": "delivery_policy.txt",
+              "passage_id": "delivery_policy_001",
+              "score": 0.268942,
+              "text": "Delivery Policy."
+            },
+            {
+              "doc_name": "payment_policy.txt",
+              "passage_id": "payment_policy_001",
+              "score": 0.255166,
+              "text": "Payment Policy."
+            }
+          ]
+        }
+      },
+      {
+        "step": 6,
+        "tool": "search_policy",
+        "arguments": {
+          "query": "refund policy"
+        },
+        "result": {
+          "query": "refund policy",
+          "found": true,
+          "passages": [
+            {
+              "doc_name": "refund_policy.txt",
+              "passage_id": "refund_policy_001",
+              "score": 1.0,
+              "text": "Refund Policy."
+            },
+            {
+              "doc_name": "delivery_policy.txt",
+              "passage_id": "delivery_policy_001",
+              "score": 0.268942,
+              "text": "Delivery Policy."
+            },
+            {
+              "doc_name": "payment_policy.txt",
+              "passage_id": "payment_policy_001",
+              "score": 0.255166,
+              "text": "Payment Policy."
+            }
+          ]
+        }
+      },
+      {
+        "step": 7,
+        "tool": "search_policy",
+        "arguments": {
+          "query": "refund policy"
+        },
+        "result": {
+          "query": "refund policy",
+          "found": true,
+          "passages": [
+            {
+              "doc_name": "refund_policy.txt",
+              "passage_id": "refund_policy_001",
+              "score": 1.0,
+              "text": "Refund Policy."
+            },
+            {
+              "doc_name": "delivery_policy.txt",
+              "passage_id": "delivery_policy_001",
+              "score": 0.268942,
+              "text": "Delivery Policy."
+            },
+            {
+              "doc_name": "payment_policy.txt",
+              "passage_id": "payment_policy_001",
+              "score": 0.255166,
+              "text": "Payment Policy."
+            }
+          ]
+        }
+      },
+      {
+        "step": 8,
+        "tool": "search_policy",
+        "arguments": {
+          "query": "refund policy"
+        },
+        "result": {
+          "query": "refund policy",
+          "found": true,
+          "passages": [
+            {
+              "doc_name": "refund_policy.txt",
+              "passage_id": "refund_policy_001",
+              "score": 1.0,
+              "text": "Refund Policy."
+            },
+            {
+              "doc_name": "delivery_policy.txt",
+              "passage_id": "delivery_policy_001",
+              "score": 0.268942,
+              "text": "Delivery Policy."
+            },
+            {
+              "doc_name": "payment_policy.txt",
+              "passage_id": "payment_policy_001",
+              "score": 0.255166,
+              "text": "Payment Policy."
+            }
+          ]
+        }
+      }
+    ],
+    "error": "max_iterations_reached",
+    "stop_reason": "FALLBACK_MAX_ITERATIONS",
+    "model_calls": 8,
+    "estimated_tokens": 5224,
+    "elapsed_seconds": 0.078,
+    "real_money_moved": false
+  }
+}

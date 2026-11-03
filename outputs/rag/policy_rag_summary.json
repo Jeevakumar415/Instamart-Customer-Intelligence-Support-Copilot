@@ -1,0 +1,24 @@
+{
+  "component": "Part D1 - TF-IDF Policy RAG",
+  "policy_document_count": 5,
+  "passage_count": 34,
+  "evaluation_question_count": 14,
+  "retrieval_top_k": 3,
+  "minimum_similarity_threshold": 0.08,
+  "expected_document_hit_rate": 1.0,
+  "unanswerable_question_count": 2,
+  "unanswerable_abstention_accuracy": 1.0,
+  "model_calls": 12,
+  "error_count": 0,
+  "outputs": [
+    "outputs/rag/policy_passages.csv",
+    "outputs/rag/policy_rag_eval.csv",
+    "outputs/rag/policy_rag_summary.json"
+  ],
+  "notes": [
+    "TF-IDF is used for local retrieval; no external embedding API is used.",
+    "Answer generation uses the supplied offline mock_llm.py.",
+    "Fact-term coverage is a diagnostic, not a semantic correctness score.",
+    "Evaluation results are measured from this run, not assumed in advance."
+  ]
+}

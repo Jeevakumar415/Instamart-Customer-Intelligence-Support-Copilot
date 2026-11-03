@@ -1,0 +1,46 @@
+{
+  "run_id": "D7_TOKEN_LIMIT_1793085401039",
+  "status": "COMPLETED",
+  "scenario_id": "D7_TOKEN_LIMIT_TEST",
+  "customer_id": "D7_TEST",
+  "order_id": "ORD-100048",
+  "message": "Please check refund eligibility for ORD-100048.",
+  "expected_outcome": "FALLBACK",
+  "expected_refund_inr": 0,
+  "messages": [
+    {
+      "role": "system",
+      "content": "AGENT\nUse tools to look up orders, search policies, calculate refunds, issue eligible simulated refunds, or escalate to a human. Never claim real money was transferred."
+    },
+    {
+      "role": "user",
+      "content": "SCENARIO_ID: D7_TOKEN_LIMIT_TEST\nCUSTOMER_ID: D7_TEST\nMESSAGE: Please check refund eligibility for ORD-100048."
+    }
+  ],
+  "trace": [],
+  "tool_steps": 0,
+  "model_calls": 0,
+  "estimated_tokens": 0,
+  "iterations": 0,
+  "current_order_id": null,
+  "final_result": {
+    "timestamp": "2026-10-27T07:16:41.138206+00:00",
+    "run_id": "D7_TOKEN_LIMIT_1793085401039",
+    "scenario_id": "D7_TOKEN_LIMIT_TEST",
+    "customer_id": "D7_TEST",
+    "order_id": "ORD-100048",
+    "message": "Please check refund eligibility for ORD-100048.",
+    "expected_outcome": "FALLBACK",
+    "actual_outcome": "FALLBACK",
+    "expected_refund_inr": 0,
+    "final_response": "FALLBACK_TOKEN_LIMIT: token budget reached; human review required.",
+    "tool_steps": 0,
+    "trace": [],
+    "error": "token_limit_reached",
+    "stop_reason": "FALLBACK_TOKEN_LIMIT",
+    "model_calls": 0,
+    "estimated_tokens": 0,
+    "elapsed_seconds": 0.0,
+    "real_money_moved": false
+  }
+}

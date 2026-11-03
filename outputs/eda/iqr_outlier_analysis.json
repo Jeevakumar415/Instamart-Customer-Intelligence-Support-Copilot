@@ -1,0 +1,22 @@
+{
+  "order_amount": {
+    "count": 11110,
+    "q1": 64.8,
+    "q3": 297.0,
+    "iqr": 232.2,
+    "lower_bound": -283.49999999999994,
+    "upper_bound": 645.3,
+    "outlier_count": 897,
+    "outlier_percent": 8.07
+  },
+  "delivery_minutes": {
+    "count": 11110,
+    "q1": 20.0,
+    "q3": 31.0,
+    "iqr": 11.0,
+    "lower_bound": 3.5,
+    "upper_bound": 47.5,
+    "outlier_count": 919,
+    "outlier_percent": 8.27
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "passed_count": 10,
+  "failed_count": 0,
+  "checks": {
+    "All supplied scenarios processed": true,
+    "Every scenario has an outcome": true,
+    "All scenarios obey tool-step limit": true,
+    "Ledger contains only simulated refund entries": true,
+    "No real money moved": true,
+    "Recovery tests passed": true,
+    "Scenario results saved": true,
+    "Run log saved": true,
+    "Refund ledger saved": true,
+    "Summary saved": true
+  }
+}

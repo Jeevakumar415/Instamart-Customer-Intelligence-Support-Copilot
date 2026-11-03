@@ -1,0 +1,46 @@
+{
+  "run_id": "D7_TIMEOUT_TEST",
+  "status": "COMPLETED",
+  "scenario_id": "S1",
+  "customer_id": "C0007",
+  "order_id": "ORD-100048",
+  "message": "My order ORD-100048 reached me very late. I would like a refund.",
+  "expected_outcome": "REFUND",
+  "expected_refund_inr": 128.25,
+  "messages": [
+    {
+      "role": "system",
+      "content": "AGENT\nUse tools to look up orders, search policies, calculate refunds, issue eligible simulated refunds, or escalate to a human. Never claim real money was transferred."
+    },
+    {
+      "role": "user",
+      "content": "SCENARIO_ID: S1\nCUSTOMER_ID: C0007\nMESSAGE: My order ORD-100048 reached me very late. I would like a refund."
+    }
+  ],
+  "trace": [],
+  "tool_steps": 0,
+  "model_calls": 0,
+  "estimated_tokens": 0,
+  "iterations": 0,
+  "current_order_id": null,
+  "final_result": {
+    "timestamp": "2026-10-27T06:19:43.774344+00:00",
+    "run_id": "D7_TIMEOUT_TEST",
+    "scenario_id": "S1",
+    "customer_id": "C0007",
+    "order_id": "ORD-100048",
+    "message": "My order ORD-100048 reached me very late. I would like a refund.",
+    "expected_outcome": "REFUND",
+    "actual_outcome": "FALLBACK",
+    "expected_refund_inr": 128.25,
+    "final_response": "FALLBACK_TIMEOUT: time budget reached; human review required.",
+    "tool_steps": 0,
+    "trace": [],
+    "error": "time_limit_reached",
+    "stop_reason": "FALLBACK_TIMEOUT",
+    "model_calls": 0,
+    "estimated_tokens": 0,
+    "elapsed_seconds": 0.0,
+    "real_money_moved": false
+  }
+}

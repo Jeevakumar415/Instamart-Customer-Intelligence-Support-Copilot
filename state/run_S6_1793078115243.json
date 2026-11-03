@@ -1,0 +1,88 @@
+{
+  "run_id": "run_S6_1793078115243",
+  "status": "COMPLETED",
+  "scenario_id": "S6",
+  "customer_id": "C0001",
+  "order_id": "ORD-999999",
+  "message": "Refund for order ORD-999999 please.",
+  "expected_outcome": "NOT_FOUND",
+  "expected_refund_inr": 0.0,
+  "messages": [
+    {
+      "role": "system",
+      "content": "AGENT\nUse tools to look up orders, search policies, calculate refunds, issue eligible simulated refunds, or escalate to a human. Never claim real money was transferred."
+    },
+    {
+      "role": "user",
+      "content": "SCENARIO_ID: S6\nCUSTOMER_ID: C0001\nMESSAGE: Refund for order ORD-999999 please."
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_1",
+          "name": "get_order",
+          "arguments": {
+            "order_id": "ORD-999999"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "name": "get_order",
+      "content": "{\"error\": \"order_not_found\", \"order_id\": \"ORD-999999\"}"
+    }
+  ],
+  "trace": [
+    {
+      "step": 1,
+      "tool": "get_order",
+      "arguments": {
+        "order_id": "ORD-999999"
+      },
+      "result": {
+        "error": "order_not_found",
+        "order_id": "ORD-999999"
+      }
+    }
+  ],
+  "tool_steps": 1,
+  "model_calls": 2,
+  "estimated_tokens": 222,
+  "iterations": 2,
+  "current_order_id": "ORD-999999",
+  "final_result": {
+    "timestamp": "2026-10-27T05:15:15.262494+00:00",
+    "run_id": "run_S6_1793078115243",
+    "scenario_id": "S6",
+    "customer_id": "C0001",
+    "order_id": "ORD-999999",
+    "message": "Refund for order ORD-999999 please.",
+    "expected_outcome": "NOT_FOUND",
+    "actual_outcome": "NOT_FOUND",
+    "expected_refund_inr": 0.0,
+    "final_response": "NOT_FOUND: no such order.",
+    "tool_steps": 1,
+    "trace": [
+      {
+        "step": 1,
+        "tool": "get_order",
+        "arguments": {
+          "order_id": "ORD-999999"
+        },
+        "result": {
+          "error": "order_not_found",
+          "order_id": "ORD-999999"
+        }
+      }
+    ],
+    "error": "",
+    "stop_reason": "COMPLETED",
+    "model_calls": 2,
+    "estimated_tokens": 222,
+    "elapsed_seconds": 0.0,
+    "real_money_moved": false
+  }
+}

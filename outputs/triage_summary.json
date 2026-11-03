@@ -1,0 +1,30 @@
+{
+  "input_file": "data\\clean\\tickets.csv",
+  "ticket_count": 164,
+  "output_ticket_count": 164,
+  "category_counts": {
+    "billing": 63,
+    "delivery": 43,
+    "technical": 33,
+    "fraud": 25
+  },
+  "pii_redacted_tickets": 146,
+  "truncated_tickets": 4,
+  "empty_tickets": 4,
+  "fallback_tickets": 1,
+  "failed_tickets": 1,
+  "model_calls_attempted": 205,
+  "estimated_input_tokens": 19597,
+  "estimated_output_tokens": 1450,
+  "estimated_total_tokens": 21047,
+  "max_ticket_input_tokens": 250,
+  "max_retries": 3,
+  "allowed_categories": [
+    "billing",
+    "delivery",
+    "fraud",
+    "technical"
+  ],
+  "mock_model_only": true,
+  "network_calls": 0
+}

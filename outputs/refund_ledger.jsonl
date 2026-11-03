@@ -1,0 +1,2 @@
+{"timestamp":"2026-10-27T07:09:18.098373+00:00","order_id":"ORD-100067","refund_inr":135.0,"status":"SIMULATED_REFUND_RECORDED","real_money_moved":false,"reason":"eligible_late_delivery"}
+{"timestamp": "2026-10-28T16:14:57.972188+00:00", "order_id": "ORD-100048", "refund_inr": 12.83, "status": "SIMULATED_REFUND_RECORDED", "real_money_moved": false, "reason": "eligible_late_delivery"}

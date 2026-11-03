@@ -1,0 +1,26 @@
+{
+  "quantity": {
+    "quantity": 1.0,
+    "discount_pct": -0.0003585447268409541,
+    "order_amount": 0.08729422983969927,
+    "delivery_minutes": -0.012622792404265953
+  },
+  "discount_pct": {
+    "quantity": -0.0003585447268409541,
+    "discount_pct": 1.0,
+    "order_amount": -0.0951058554520398,
+    "delivery_minutes": -0.009808140918703976
+  },
+  "order_amount": {
+    "quantity": 0.08729422983969927,
+    "discount_pct": -0.0951058554520398,
+    "order_amount": 1.0,
+    "delivery_minutes": -0.003134974349858618
+  },
+  "delivery_minutes": {
+    "quantity": -0.012622792404265953,
+    "discount_pct": -0.009808140918703976,
+    "order_amount": -0.003134974349858618,
+    "delivery_minutes": 1.0
+  }
+}

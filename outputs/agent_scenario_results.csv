@@ -1,0 +1,8 @@
+scenario_id,customer_id,order_id,expected_outcome,actual_outcome,expected_refund_inr,final_response,tool_steps,error,real_money_moved
+S1,C0007,ORD-100048,REFUND,REFUND,128.25,REFUND: simulated refund of INR 128.25 recorded; no real money moved.,4,,False
+S2,C0008,ORD-100067,REFUND,REFUND,135.0,REFUND: simulated refund of INR 135.00 recorded; no real money moved.,4,,False
+S3,C0016,ORD-100145,ESCALATE,ESCALATE,1999.0,ESCALATE: human approval required. Reason: human_approval_required_above_INR_1000.,4,,False
+S4,C0001,ORD-100001,DENIED,DENIED,0.0,DENIED: delivery was within 45 minutes.,3,,False
+S5,C0003,ORD-100025,DENIED,DENIED,0.0,DENIED: only completed orders can be refunded.,2,,False
+S6,C0001,ORD-999999,NOT_FOUND,NOT_FOUND,0.0,NOT_FOUND: no such order.,1,,False
+S7,C0007,ORD-100048,FALLBACK,FALLBACK,0.0,FALLBACK_TOKEN_LIMIT: token budget reached; human review required.,4,token_limit_reached,False
