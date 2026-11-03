@@ -1,0 +1,146 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+
+# Assignment-required clean datasets
+/data/clean/*
+!/data/clean/customers.csv
+!/data/clean/products.csv
+!/data/clean/orders.csv
+
+# Generated source data and policy files not approved for publication
+/data/raw/
+/data/policies/
+
+# Assignment-required SQLite database; ignore other local databases
+/data/*.db
+!/data/instamart.db
+*.sqlite
+*.sqlite3
+*.joblib
+*.pkl
+*.pickle
+
+# Generated outputs are excluded by default; allow only assignment evidence.
+/outputs/*
+/outputs/historical_part_b_root_artifacts/
+
+# Part A - EDA evidence
+!/outputs/part_a_validation.json
+!/outputs/eda/
+/outputs/eda/*
+!/outputs/eda/eda_findings.md
+!/outputs/eda/descriptive_statistics.csv
+!/outputs/eda/correlation_matrix.csv
+!/outputs/eda/correlation_matrix.json
+!/outputs/eda/dataset_info.json
+!/outputs/eda/iqr_outlier_analysis.json
+!/outputs/eda/pandas_sql_crosscheck.json
+!/outputs/eda/pivot_reconciliation.json
+!/outputs/eda/revenue_pivot_city_category.csv
+
+# Part A - SQL evidence
+!/outputs/sql_results/
+/outputs/sql_results/*
+!/outputs/sql_results/execution_summary.json
+!/outputs/sql_results/q1_results.csv
+!/outputs/sql_results/q2_results.csv
+!/outputs/sql_results/q3_results.csv
+!/outputs/sql_results/q4_results.csv
+!/outputs/sql_results/q5_results.csv
+!/outputs/sql_results/q6_results.csv
+!/outputs/sql_results/q7_results.csv
+
+# Part B - assignment-level artifacts
+!/outputs/customer_segments.csv
+!/outputs/lapse_model.joblib
+!/outputs/retention_list.csv
+!/outputs/lapse/
+/outputs/lapse/*
+!/outputs/lapse/test_metrics.json
+
+# Part C - ticket triage evidence
+!/outputs/triage_results.csv
+!/outputs/triage_budget_demo.csv
+!/outputs/triage_summary.json
+
+# Part D1 - policy RAG evidence
+!/outputs/rag/
+/outputs/rag/*
+!/outputs/rag/policy_passages.csv
+!/outputs/rag/policy_rag_eval.csv
+!/outputs/rag/policy_rag_summary.json
+
+# Part D2 - refund-agent evidence
+!/outputs/agent_scenario_results.csv
+!/outputs/agent_runs.jsonl
+!/outputs/refund_ledger.jsonl
+!/outputs/agent_summary.json
+!/outputs/agent_validation.json
+
+# D8 - saved checkpoint/resume summary
+!/outputs/d8_resume_summary.json
+
+# State directory is included only for the existing assignment evidence.
+/state/*
+!/state/D7_MAX_ITER_TEST.json
+!/state/D7_MAX_ITERATIONS_1793085401039.json
+!/state/D7_TIMEOUT_1793085401039.json
+!/state/D7_TIMEOUT_TEST.json
+!/state/D7_TOKEN_LIMIT_1793085401039.json
+!/state/D8_CHECKPOINT_RESUME_DEMO.json
+!/state/D8_CHECKPOINT_RESUME_DEMO_1793203227206.json
+!/state/D8_CHECKPOINT_RESUME_DEMO_1793203391616.json
+!/state/D8_CHECKPOINT_RESUME_DEMO_1793203616780.json
+!/state/D8_CHECKPOINT_RESUME_DEMO_1793203696330.json
+!/state/D8_CHECKPOINT_RESUME_DEMO_1793204097914.json
+!/state/run_RECOVERY_LOOP_TEST_1793078115388.json
+!/state/run_RECOVERY_LOOP_TEST_1793084475066.json
+!/state/run_RECOVERY_LOOP_TEST_1793084958279.json
+!/state/run_S1_1793078115017.json
+!/state/run_S1_1793084474760.json
+!/state/run_S1_1793084958024.json
+!/state/run_S2_1793078115069.json
+!/state/run_S2_1793084474797.json
+!/state/run_S2_1793084958069.json
+!/state/run_S3_1793078115116.json
+!/state/run_S3_1793084474830.json
+!/state/run_S3_1793084958112.json
+!/state/run_S4_1793078115161.json
+!/state/run_S4_1793084474865.json
+!/state/run_S4_1793084958150.json
+!/state/run_S5_1793078115212.json
+!/state/run_S5_1793084474893.json
+!/state/run_S5_1793084958179.json
+!/state/run_S6_1793078115243.json
+!/state/run_S6_1793084474913.json
+!/state/run_S6_1793084958206.json
+!/state/run_S7_1793078115268.json
+!/state/run_S7_1793084474930.json
+!/state/run_S7_1793084958225.json
+
+# Temporary files, locks, and backups
+*.tmp
+*.log
+*.lock
+*.bak
+*.backup
+*~
+
+# Historical Part B root-level artifacts
+/outputs/historical_part_b_root_artifacts/**
+
+# Operating-system files
+.DS_Store
+Thumbs.db
